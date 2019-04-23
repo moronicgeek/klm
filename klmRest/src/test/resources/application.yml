@@ -1,0 +1,16 @@
+security:
+  oauth2:
+    client:
+      grantType: client_credentials
+      clientId: travel-api-client
+      clientSecret: psw
+      accessTokenUri: http://localhost:8080/oauth/token
+
+flight:
+  baseUrl: http://localhost:8080/fares/
+
+
+location:
+  baseUrl: http://localhost:8080/airports
+server:
+  port: 9090

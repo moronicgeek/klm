@@ -1,0 +1,10 @@
+<p xmlns="http://www.w3.org/1999/html">
+
+  <input [(ngModel)]="term" (keyup)="search()">
+
+    <li class="nobullet" *ngFor="let loc of locations" (click)="selectedItem(loc)">
+      <div>{{loc.name}}</div>
+    </li>
+
+  <!--<input name="location"  [(value)]="term" (keyup)="search()"/>-->
+</p>

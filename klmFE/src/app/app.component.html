@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/KLM_logo.svg">
+</div>
+<h2>Search here: </h2>
+
+<div>
+  Departure :
+  <app-locations-search (selectedLocation)='departureChange($event)'></app-locations-search>
+
+</div>
+<div>
+  Destination :
+  <app-locations-search (selectedLocation)='destinationChange($event)'></app-locations-search>
+</div>
+
+<div>
+  <input type="submit" value="Search" (click)="search()">
+</div>
+
+<h1  >
+ {{fare.currency}} {{fare.amount}}
+</h1>
+<router-outlet></router-outlet>
